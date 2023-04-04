@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contact_us {
+    direction: rtl;
+    position: fixed;
+
+    width: 50px;
+    height: 40%;
+    left: 88%;
+    top: 55%;
+
+}
+
+#contact_us div {
+    width: 60%;
+    height: 80%;
+    border-radius: 20px;
+
+    display: flex;
+    display: none;
+    justify-content: center;
+}
+
+#contact_us button {
+    height: 30px;
+    border: 0;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 100%;
+
+}
+
+#contact_us ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contact_us li {
+    cursor: pointer;
+    transition: .2S;
+    padding: 10%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+#li_1 {
+
+    color: blue;
+}
+
+#li_2 {
+
+    color: red;
+}
+
+#li_3 {
+
+    color: lightseagreen;
+}
+
+#li_4 {
+
+    color: green;
+}
+
+#contact_us_slide_open {
+    animation-name: open;
+    animation-duration: 2s;
+}
+
+#contact_us_slide_close {
+    animation-name: close;
+    animation-duration: 2s;
+}
+
+@keyframes open {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes close {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@media (max-width : 500px) {
+    #contact_us {
+        left: 80%;
+        top: 55%;
+    }
+}
